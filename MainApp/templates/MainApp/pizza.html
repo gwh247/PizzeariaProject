@@ -1,0 +1,52 @@
+{% extends "MainApp/base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+<div class="pizza">
+    <div>
+        <p> <b>Pizza:</b> {{ pizza.pizza_name }} </p>
+        <div>
+            {% if pizza.pizza_name == "Cheese" %}
+                <img src="{% static 'images/CheesePizza.png' %}" width="100px/">
+            
+            {% if pizza.pizza_name == "Hawaiian" %}
+                <img src="{% static 'images/HawianPizza.png' %}" width="100px/">
+
+            {% if pizza.pizza_name == "Meat Lovers" %}
+                <img src="{% static 'images/MeatLovers.png' %}" width="100px/">
+            
+            {% if pizza.pizza_name == "Pepperoni" %}
+                <img src="{% static 'images/PepperoniPizza.png' %}" width="100px/">
+
+            {% if pizza.pizza_name == "Vegetarian" %}
+                <img src="{% static 'images/VEGETARIAN-pizza' %}" width="100px/">
+            {% endif %}   
+            <br>
+            <div>
+                <b>Toppings:</b>
+
+                {% for j in toppings %}
+
+                <li> {{ j.topping_name }} </li>
+
+                {% empty %}
+                <li>No toppings have been been chosen</li>
+                {% endfor %}
+            </div>
+        </div>
+    <br>
+    <div>
+        <p><b>Comments:</b> {{ comment }}</p>
+        <ul>
+            {% for c in comments %}
+            <p>{{ c.text }}</p>
+            <p><i>-- {{ c.date_added }}</i></p>
+            {% empty %}
+            <li>No comments have been added yet</li>
+            {% endfor %}
+        </ul>
+    <p><a href="{% url 'pizzas:comment' pizza.id %}">Add New Comment</a></p>
+    </div>
+    </div>
+</div>
+{% endblock content %}
