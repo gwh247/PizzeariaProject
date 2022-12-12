@@ -1,11 +1,14 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'styles.css' %}">
+
 <div class="header-div">
+
 <center>
     <p id="basetitle"><b>* Papa Johns *</b></p>
 </center>
 </div>
+
 <div id="navigation">
     <p><b>Navigation:</b></p>
     <ul>
@@ -13,4 +16,5 @@
         <li><a href="{% url 'MainApp:pizzas' %}">Pizzas</a></li>
     </ul>
 </div>
+
 {% endblock content %}
