@@ -9,9 +9,9 @@ img {
 }
 
 #navigation {
-    background-color:lightskyblue;
+    background-color:rgb(54, 107, 139);
     font-size:25;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Arial', 'Helvetica', sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -19,21 +19,21 @@ img {
 
 #homepage {
     font-size: 30;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Arial', 'Helvetica', sans-serif;
 }
 
 .pizzas {
     font-size: 20;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:lightpink;
+    font-family:'Arial', 'Helvetica', sans-serif;
+    background-color:rgb(254, 216, 222);
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 .pizza {
     font-size: 15;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:lightyellow;
+    font-family:'Arial', 'Helvetica', sans-serif;
+    background-color:rgb(250, 250, 168);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -41,7 +41,14 @@ img {
 #comment {
     font-size: 15;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:lightcyan;
+    background-color:rgb(193, 252, 252);
     padding-top: 5px;
     padding-bottom: 5px;
+}
+/* tried uploading background image to make it look better */
+#bg {
+    background-size: 546px 317px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
 }
