@@ -1,0 +1,47 @@
+#basetitle {
+    font-size: 50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+img {
+    padding: 20px;
+}
+
+#navigation {
+    background-color:lightskyblue;
+    font-size:25;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#homepage {
+    font-size: 30;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pizzas {
+    font-size: 20;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:lightpink;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pizza {
+    font-size: 15;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:lightyellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#comment {
+    font-size: 15;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:lightcyan;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
